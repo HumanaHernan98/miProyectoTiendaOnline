@@ -60,16 +60,14 @@
     </section>
     <main>
         <section>
-            <form action="/login" method="post">
-                <label for="usuario">usuario</label>
-                <input type="text" name="usuario" id="usuario">
+            <form class="form-largo" action="/login" method="post">
+                <input class="input-abs" type="text" name="usuario" id="usuario" placeholder="Nombre Usuario">
                 <span class="feedback"></span>
                 <br>
-                <label for="password">password</label>
-                <input type="password" name="password" value="password">
+                <input class="input-abs" type="password" name="password" value="" placeholder="Password">
                 <span class="feedback"></span>
-                <button type="submit" value="enviar">Enviar</button>
-                <button type="reset" value="reset">Reset</button>
+                <button  class="btn-env" type="submit" value="enviar">Enviar</button>
+                <button  class="btn-cancel"type="reset" value="reset">Reset</button>
         </section>
         </form>
     </main>

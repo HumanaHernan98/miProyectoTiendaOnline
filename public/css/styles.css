@@ -46,6 +46,7 @@ body{
 section{
     background-color: #ebebeb;
     display: block;
+    margin: auto;
 }
 
 header nav {
@@ -140,42 +141,63 @@ main section article{
     padding: 15px;
 }
 
+
 .form-largo{
-    width: 80%;
-    height: 90%;
-    margin: auto;
-    border: solid 1px grey;
-    
-} 
-.form-largo label{
-    padding: 5px;    
     width: 50%;
-    margin: 10px;
+    border: #696969 solid 1px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+} 
+.item-label{
     font-weight: bold;
+    display: block;
+    margin-top: 5px;
 }
-.form-largo input {
-    padding: 5px 20px;
-    width: 80%;
-    margin: 10px 20px 10px 20px;
-    border-radius: 4px;
-    border: 1px;
-    
-}  
-.form-largo div{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: start;
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 1px #696969 solid;
 }
-.form-largo div input{
-    width: 20%;
+.input-abs{
+    width: 100%;
+    text-align: center;
+    height: 25px;
 }
 
+.label-check{
+    width: 25%;
+    margin-left: 10px;
+}
+
+.input-radio{
+    width: 25%;
+}
 .check{
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+.btn-env{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 60px;
+    height: 30px;
+    background-color: #1259c3;
+    border-radius: 5px;
+    color: white;
+}
+.btn-cancel{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(219, 92, 92);
+    border-radius: 5px;
+    color: white;
+}
 
 @media (max-width: 768px) {
     .description{

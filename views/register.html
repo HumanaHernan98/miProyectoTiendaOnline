@@ -61,44 +61,47 @@
     <main>
         <section>
             <form action="/registro" method="post" class="form-largo">
-                <input type="text" name="nombre" id="nombre" placeholder="nombre y apellido">
+                <input class="input-abs"type="text" name="nombre" id="nombre" placeholder="nombre y apellido">
                 <span class="feedback"></span>
                 <br>
-                <input type="text" name="usuario" id="usuario" placeholder="usuario">
+                <input class="input-abs" type="text" name="usuario" id="usuario" placeholder="usuario">
                 <span class="feedback"></span>
                 <br>
-                <label for="fecha-nacimiento">fecha de nacimiento</label>
+                <label class="item-label" for="fecha-nacimiento">fecha de nacimiento</label>
                 <br>
                 <input type="date" name="fecha-nacimiento" id="fecha-nacimiento">
                 <span class="feedback"></span>
                 <br>
-                <label>tipo de usuario</label>
+                <label class="item-label">tipo de usuario</label>
+                <input  class="input-radio" type="radio" name="tipo-usuario" id="tipo-usuario" value="compra"><label class="label-check">Compra</label></input>
+                <input class="input-radio" type="radio" name="tipo-usuario" id="tipo-usuario" value="venta"><label class="label-check">Venta</label></input>
                 <br>
-                <div>
-                <input type="radio" name="tipo-usuario" id="tipo-usuario" value="compra">compra</input>
-                <input type="radio" name="tipo-usuario" id="tipo-usuario" value="venta">venta</input>
-                </div>
-                <br>
-                <label>Categorias de Interes</label>
+                <label class="item-label">Categorias de Interes</label>
                 <br>
                 <div class="check">
-                <input type="checkbox" name="categoria" value="electo">Electro</input>
-                <br>    
-                <input type="checkbox" name="categoria" value="moda">Moda</input>
-                <input type="checkbox" name="categoria" value="hogar">Hogar</input>
-                <input type="checkbox" name="categoria" value="jugueteria">Jugueteria</input>
-                <input type="checkbox" name="categoria" value="visaSana">Vida Sana</input>
+                <input class="input-radio" type="checkbox" name="categoria" value="electo"><label class="label-check">Electro</label></input>
                 </div>
-                <br>
-                <label for="perfil">seleccionar perfil</label>
-                <input type="file" name="avatar" accept=".jpg" multiple>
+                <div class="check">    
+                <input class="input-radio" type="checkbox" name="categoria" value="moda"><label class="label-check">Moda</label></input>
+                </div>
+                <div class="check">
+                <input class="input-radio" type="checkbox" name="categoria" value="hogar"> <label class="label-check">Hogar</label> </input>
+                </div>
+                <div class="check">
+                <input class="input-radio" type="checkbox" name="categoria" value="jugueteria"> <label class="label-check">Jugueteria</label> </input>
+                </div >
+                <div class="check">
+                <input class="input-radio" type="checkbox" name="categoria" value="visaSana"><label class="label-check">Vida Sana</label></input>
+                </div> 
+                <label class="item-label" for="perfil">seleccionar perfil</label>
+                <input type="file" name="avatar" accept=".jpg">
                 <span class="feedback"></span>
                 <br>
-                <label for="password">password</label>
-                <input type="password" name="password" value="password">
+                <label class="item-label" for="password">password</label>
+                <input class="input-abs" type="password" name="password" value="">
                 <span class="feedback"></span>
-                <button type="submit" value="enviar">Enviar</button>
-                <button type="reset" value="reset">Reset</button>
+                <button class="btn-env" type="submit" value="enviar">Enviar</button>
+                <button class="btn-cancel" type="reset" value="reset">Reset</button>
             </form>
         </section>
     </main>
