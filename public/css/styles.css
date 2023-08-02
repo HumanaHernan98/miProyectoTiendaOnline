@@ -49,6 +49,14 @@ section{
     margin: auto;
 }
 
+header{
+    position: fixed;
+    background-color:#EAC926;
+    width:100%;
+    top:0;
+    z-index: 100;
+}
+
 header nav {
     font-size: 12px;
 }
@@ -98,6 +106,10 @@ div.burger-menu i{
     width: 40px;
 }
 .banner{
+    width: 100%;
+    margin-top: 240px;
+}
+.banner img{
     width: 100%;
 }
 main section article img{
@@ -202,6 +214,9 @@ input{
 @media (max-width: 768px) {
     .description{
         display: none;
+    }
+    .description :hover{
+        display: block;
     }
     header nav{
         display: none;
